@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            
+                <img class="logo-h" src="logo-h.png" alt="">
+          
+            <div class="nav-text">
+                <div class="upper-nav">
+                    <button class="login">LOGIN</button>
+                    <h5>REGISTER</h5>
+                    <h5>AGENT LOGIN</h5>
+                    <h5>CONTACT US</h5>
+                    <h5>AKS DISHA</h5>
+                    <button class="alert">ALERTS</button>
+                    <p>18-Jun-2022 [ <span></span> ] &nbsp; A- &nbsp; A &nbsp; A+ &nbsp; हिन्दी</p>
+                </div>
+                <div class="lower-nav">
+                    <div class="train-options">
+                        <h1>Book ticket</h1>
+                        <h1>PNR Enquiry</h1>
+                        <h1>Train Schedule</h1>
+                        <h1>Track Your Train</h1>
+                        <h1>IRCTC train</h1>
+                    </div>
+                    <div class="m">
+                        <h1>IRCTC eWallet</h1>
+                        <h1>IRCTC iMudra</h1>
+                        <h1>IRCTC iPay</h1>
+                        <h1>e-Gift Voucher</h1>
+                    </div>
+                    <img class="home-logo" src="home-logo.png"></img>
+                    <button class="irctc" onclick="non()">IRCTC EXCLUSIVE</button>
+                    <h6 class="train"  onclick="yess()">TRAIN</h6>
+                    <h5>BUSES</h5>
+                    <h5>FLIGHT</h5>
+                    <h5>HOTELS</h5>
+                    <h5>HOLIDAYS</h5>
+                    <h5>LOYALITY</h5>
+                    <h5>MEALS</h5>
+                    <h5>PROMOTION</h5>
+                    <button class="premium">PREMIUM PARTNER</button>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            
+                <img class="logo-e" src="logo-e.png" alt="">
+            
+        </nav>
+        <div class="search-destiny">
+            <div></div>
+            <div class="uper">
+                <input type="text" value="BHOPAL JN - BPL" class="destine">
+                <div class="arrow"><img src="interchange-arrow.png" alt=""></div>
+                <input type="text" value="NEW DEHLI-NDLS" class="location">
+                <input type="text" value="25/06/2022" class="date">
+                <input type="text" value="All Classes" class="classes">
+                <input type="text" value="GENERAL" class="general">
+                <button class="modify">Modify Search</button>
+            </div>
+            <div class="lower">
+                <div class="box">
+                    <input type="checkbox" class="check">
+                    <p>Flexible With Date</p>
+                </div>
+                <div class="box">
+                    <input type="checkbox" class="check">
+                    <p>Train with Avalable Berth</p>
+                </div>
+                <div class="box">
+                    <input type="checkbox" class="check">
+                    <p>Person With Disability Concession</p>
+                </div>
+                <div class="box">
+                    <input type="checkbox" class="check" >
+                    <p>Railway Pass Concession</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="contend">
+            <div class="left-contend">
+                <div class="filters">
+                    <h2>Refine Results</h2>
+                    <h1>Reset Filters</h1>
+                    <!-- <h3>JOURNEY CLASS</h3>
+                    <button class="select-all">Select All <img src="" alt=""></button> -->
+                </div>
+                <div class="journey-classes">
+                    <h3>JOURNEY CLASS</h3>
+                    <button class="select-all">Select All</button>
+                    <img src="up-arrow.png" alt="">
+                </div>
+                <div class="seat-classes">
+                    <div class="ac2">
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>AC First Class <br>(1A)</h6>
+                       &nbsp;&nbsp; <input type="checkbox" class="ckeck" checked>
+                        <h6>AC 2 Tier (2A)</h6>
+                    </div>
+                    <div class="ac2">
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>Second Sitting <br>(2S)</h6>
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>AC 3 Tier (3A)</h6>
+                    </div>
+                    <div class="ac2">
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>AC 3 Economy <br>(3E)</h6>
+                        &nbsp;<input type="checkbox" class="ckeck" checked>
+                        <h6>AC Chair car <br>(CC)</h6>
+                    </div>
+                    <div class="ac2">
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>Exec. Chair Car <br>(EC)</h6>
+                        <input type="checkbox" class="ckeck" checked>
+                        <h6>Sleeper (SL)</h6>
+                    </div>
+                    <div class="train-type">
+                        <h3>TRAIN TYPE</h3>
+                        <button class="select-all">Select All</button>
+                        <img src="up-arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="train-names">
+                    <div class="duronto names">
+                        <input type="checkbox" class="ckeck">
+                        <h1 class="yellow">DURONTO</h1>
+                    </div>
+                    <div class="other names">
+                        <input type="checkbox" class="ckeck">
+                        <h1>OTHER</h1>
+                    </div>
+                    <div class="rajdhani names" >
+                        <input type="checkbox" class="ckeck">
+                        <h1 class="purpul">RAJDHANI</h1>
+                    </div>
+                    <div class="satabdi names">
+                        <input type="checkbox" class="ckeck">
+                        <h1 class="bule">SHATABDI</h1>
+                    </div>
+                    <div class="special names">
+                        <input type="checkbox" class="ckeck">
+                        <h1 class="brown">SPECIAL</h1>
+                    </div>
+                    <div class="deoarture">
+                        <h3>DEPARTURE TIME</h3>
+                        <button class="select-all">Select All</button>
+                        <img src="up-arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="arrival-time">
+                    <div class="top">
+                        <div class="morning">
+                            <h1>00:00-06:00</h1>
+                            <h1>Early Morning</h1>
+                        </div>
+                        <div class="morning">
+                            <h1>00:06-12:00</h1>
+                            <h1>Morning</h1>
+                        </div>
+                    </div>
+                    <div class="bottom top">
+                        <div class="morning">
+                            <h1>12:00-18:00</h1>
+                            <h1>Mid Day</h1>
+                        </div>
+                        <div class="morning">
+                            <h1>18:00-24:00</h1>
+                            <h1>Night</h1>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="deoarture a">
+                        <h3>ARRIAVAL TIME</h3>
+                        <button class="select-all">Select All</button>
+                        <img src="up-arrow.png" alt="">
+                    </div>
+                    <div class="from-station">
+                        <div class="names">
+                            <input type="checkbox" class="ckeck">
+                            <h1>DEHLI SAFDARJNG</h1>
+                        </div>
+                        <div class="names">
+                            <input type="checkbox" class="ckeck">
+                            <h1>NEW DEHLI</h1>
+                        </div>
+                        <div class="names">
+                            <input type="checkbox" class="ckeck">
+                            <h1>H NIZAMUDDIN</h1>
+                        </div>
+                        <div class="deoarture a">
+                            <h3>FROM STATION</h3>
+                            <button class="select-all">Select All</button>
+                            <img src="up-arrow.png" alt="">
+                        </div>
+                    </div>
+                   
+
+                    <div class="from-station">
+                        <div class="names">
+                            <input type="checkbox" class="ckeck">
+                            <h1>BHOPAL JN</h1>
+                        </div>
+                        <div class="names">
+                            <input type="checkbox" class="ckeck">
+                            <h1>RANI KAMALAPATI</h1>
+                        </div>
+                        
+                        <div class="deoarture a">
+                            <h3>TO STATION</h3>
+                            <button class="select-all">Select All</button>
+                            <img src="up-arrow.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="right-contend">
+                <div class="matched-result">
+                    <p>27 Results for <span>BHOPAL JN TO NEW DEHLI | Sat, 25 Jun 2022</span> For Quoto | General</p>
+                    <div class="buttons">
+                        <div>
+                        <button class="duration">Sort By | Duration</button>
+                        <button class="available-trains">Show Avalable Trains</button>
+                        </div>
+                        <div>
+                            <button class="pre-day">Previous Day</button>
+                            <button class="next-day">Next Day</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ndls">
+                    <div class="day-names">
+                        <h1>NDLS SHATABDI (12001)</h1>
+                        <p>Runs On: M T W T F S S</p>
+                        <h2>Train Schedule</h2>
+                    </div>
+                    <div class="details">
+                        <div class="train-way">
+                        <p><span>15:30 | </span> BHOPAL JN | Sat, 25 Jun</p>
+                        <p>-----80:20----</p>
+                        <p><span>23:50 | </span> NEW DEHLI | Sat, 25 Jun</p>
+                        </div>
+                        <div class="seats-avial">
+                            <button onclick="avai()"  class="ac3 ac">AC 3 Tier (3A) <br> <span id="h"> Refresh <img src="refresh.png" alt="" ></span></button>
+                            <button onclick="avai()" class="ac">AC 2 Tier (2A) <br> <span id="h3">Refresh <img src="refresh.png" alt=""> </span></button>
+                            <!-- <button class="ac2 ac">AC 2 Tier (2A) <br> <span> Refresh</span></button> -->
+                            <button onclick="avai()" class="ac1 ac">AC First Class (1A) <br> <span id="h2">Refresh <img src="refresh.png" alt=""></span></button>
+                        </div>
+                        <div class="book-buttons">
+                            <button onclick="fun()" class="book-now">Book Now</button>
+                            <button class="other1">OTHER DATES</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="ndls mas">
+                    <div class="day-names">
+                        <h1>MAS NZM RAJDHANI (12433)</h1>
+                        <p>Runs On: M T W T F S S</p>
+                        <h2>Train Schedule</h2>
+                    </div>
+                    <div class="details">
+                        <div class="train-way">
+                        <p><span>02:10 | </span> BHOPAL JN | Sat, 25 Jun</p>
+                        <p>-----08:20----</p>
+                        <p><span>10:30 | </span> H NIZAMUDDIN | Sat, 25 Jun</p>
+                        </div>
+                        <div class="seats-avial">
+                            <button onclick="avai2()" class="ac3 ac">AC 3 Tier (3A) <br> <span id="h4"> Refresh <img src="refresh.png" alt=""></span></button>
+                            <!-- <button class="ac2 ac">AC 2 Tier (2A) <br> <span> Refresh</span></button> -->
+                            <button onclick="avai2()" class="ac1 ac">AC First Class (1A) <br> <span id="h5">Refresh <img src="refresh.png" alt=""></span></button>
+                        </div>
+                        <div class="book-buttons">
+                            <button class="book-now">Book Now</button>
+                            <button onclick="fun2()" class="other1">OTHER DATES</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="ndls raj">
+                    <div class="day-names">
+                        <h1>RAJDHANI EXPRESS(22691)</h1>
+                        <p>Runs On: M T W T F S S</p>
+                        <h2>Train Schedule</h2>
+                    </div>
+                    <div class="details">
+                        <div class="train-way">
+                        <p><span>21:10 | </span> BHOPAL JN | Sat, 25 Jun</p>
+                        <p>-----08:30----</p>
+                        <p><span>05:30 | </span> H NIZAMUDDIN | Sat, 26 Jun</p>
+                        </div>
+                        <div class="seats-avial">
+                            <button onclick="avai3()" class="ac3 ac">AC 3 Tier (3A) <br> <span id="h6"> Refresh <img src="refresh.png" alt=""></span></button>
+                            <!-- <button class="ac2 ac">AC 2 Tier (2A) <br> <span> Refresh</span></button> -->
+                            <button onclick="avai3()" class="ac1 ac">AC First Class (1A) <br> <span id="h7">Refresh <img src="refresh.png" alt=""></span></button>
+                        </div>
+                        <div class="book-buttons">
+                            <button class="book-now">Book Now</button>
+                            <button onclick="fun3()" class="other1">OTHER DATES</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="ndls sam">
+                    <div class="day-names">
+                        <h1>SAMPARK KRANTI(12649)</h1>
+                        <p>Runs On: M T W T F S S</p>
+                        <h2>Train Schedule</h2>
+                    </div>
+                    <div class="details">
+                        <div class="train-way">
+                        <p><span>23:10 | </span> BHOPAL JN | Sat, 25 Jun</p>
+                        <p>-----08:20----</p>
+                        <p><span>08:30 | </span> H NIZAMUDDIN | Sat, 26 Jun</p>
+                        </div>
+                        <div class="seats-avial">
+                            <button class="ac3 ac">AC 3 Tier (3A) <br> <span> Refresh</span><img src="refresh.png" alt=""></button>
+                            <!-- <button class="ac2 ac">AC 2 Tier (2A) <br> <span> Refresh</span></button> -->
+                            <button class="ac1 ac">AC First Class (1A) <br> <span>Refresh</span><img src="refresh.png" alt=""></button>
+                        </div>
+                        <div class="book-buttons">
+                            <button class="book-now">Book Now</button>
+                            <button class="other1">OTHER DATES</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="ndls mas">
+                    <div class="day-names">
+                        <h1>MAS NZM RAJDHANI (12433)</h1>
+                        <p>Runs On: M T W T F S S</p>
+                        <h2>Train Schedule</h2>
+                    </div>
+                    <div class="details">
+                        <div class="train-way">
+                        <p><span>02:10 | </span> BHOPAL JN | Sat, 25 Jun</p>
+                        <p>-----08:20----</p>
+                        <p><span>10:30 | </span> H NIZAMUDDIN | Sat, 25 Jun</p>
+                        </div>
+                        <div class="seats-avial">
+                            <button class="ac3 ac">AC 3 Tier (3A) <br> <span> Refresh</span><img src="refresh.png" alt=""></button>
+                            <!-- <button class="ac2 ac">AC 2 Tier (2A) <br> <span> Refresh</span></button> -->
+                            <button class="ac1 ac">AC First Class (1A) <br> <span>Refresh</span><img src="refresh.png" alt=""></button>
+                        </div>
+                        <div class="book-buttons" >
+                            <button class="book-now">Book Now</button>
+                            <button class="other1" id="kuch">OTHER DATES</button>
+                            <img class="info" src="info.png" alt="">
+                        
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <span style="color: red; font-weight: 700;"></span> -->
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var a = document.querySelector(".train-options");
+        var b = document.querySelector(".m");
+        function yess(){
+            a.classList.toggle("new");
+        }
+        function non(){
+            b.classList.toggle("n");
+        }
+        function avai(){
+            // var q = document.getElementsByClassName("ac3");
+        //    document.getElementsByClassName("ac3").innerHTML = "hello";
+        document.getElementById("h").innerHTML = "<span style='color: #37A51D;font-weight: 700;'>AVAILABLE-0006</span>";
+        document.getElementById("h3").innerHTML = "<span style='color: red;font-weight: 700;'>WL-97</span>";
+        document.getElementById("h2").innerHTML = "<span style='color: #37A51D;font-weight: 700;'>AVAILABLE-009</span>";
+        }
+        function avai2(){
+            document.getElementById("h4").innerHTML = "<span style='color: red;font-weight: 700;'>WL-03</span>";
+        document.getElementById("h5").innerHTML = "<span style='color: #37A51D;font-weight: 700;'>AVAILABLE-127</span>";
+        }
+        function avai3(){
+            document.getElementById("h7").innerHTML = "<span style='color: red;font-weight: 700;'>WL-921</span>";
+        document.getElementById("h6").innerHTML = "<span style='color: #37A51D;font-weight: 700;'>AVAILABLE-001</span>";
+        }
+        function fun(){
+            window.alert("Kyaa Karoge Booking Karke");
+        }
+        function fun2(){
+            window.alert("Nahi HAi Koi Date");
+        }
+        function fun3(){
+            window.alert("Are Bhaii Bas KArr");
+        }
+    </script>
+</body>
+</html>
